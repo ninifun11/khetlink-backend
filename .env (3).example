@@ -1,0 +1,16 @@
+# Used by `docker compose`. For running each service by hand, use the .env files inside backend/ and frontend/.
+
+# Supabase → Project Settings → API
+SUPABASE_URL=https://YOUR-PROJECT.supabase.co
+SUPABASE_ANON_KEY=YOUR_ANON_KEY
+SUPABASE_SERVICE_ROLE_KEY=YOUR_SERVICE_ROLE_KEY
+
+# Shared secret between the Express API and the AI service
+AI_SERVICE_KEY=change-me
+
+# Where the browser reaches things (change these when you deploy)
+FRONTEND_URL=http://localhost:3000
+PUBLIC_API_URL=http://localhost:4000
+
+# Optional: Mapbox public token (pk.…) for street maps. Without it the app draws routes on a built-in canvas.
+MAPBOX_TOKEN=

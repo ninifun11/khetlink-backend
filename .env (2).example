@@ -1,0 +1,4 @@
+# Shared secret between the Express API and this service (leave empty to disable the check in local dev)
+AI_SERVICE_KEY=change-me
+# Comma-separated list of allowed origins for direct browser calls (the Express API calls this server-side)
+CORS_ORIGINS=http://localhost:4000,http://localhost:3000

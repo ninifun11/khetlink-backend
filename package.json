@@ -1,0 +1,25 @@
+{
+  "name": "khetlink-backend",
+  "version": "1.0.0",
+  "description": "KhetLink REST API (Express + Supabase)",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": { "node": ">=18.17" },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "seed": "node scripts/seed.js",
+    "seed:reset": "node scripts/seed.js --reset",
+    "check": "node --check src/server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "zod": "^3.23.8"
+  }
+}
